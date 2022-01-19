@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net6.0;netstandard2.1</TargetFrameworks>
+        <Authors>Fabricators</Authors>
+        <Product>Unifiedban Common</Product>
+        <Copyright>Fabricators 2022</Copyright>
+        <BuildNumber Condition=" '$(BuildNumber)' == '' ">0</BuildNumber>
+        <VersionSuffix Condition="'$(Configuration)'=='Debug'">-dev</VersionSuffix>
+        <FileVersion>4.0.0.0</FileVersion>
+        <Version>4.0.0$(VersionSuffix)</Version>
+        <AssemblyVersion>4.0.0</AssemblyVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DebugType>embedded</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+</Project>
