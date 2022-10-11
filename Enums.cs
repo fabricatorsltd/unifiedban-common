@@ -110,5 +110,12 @@ namespace Unifiedban.Next.Common
             MemberJoin = 3,
             MemberLeave = 4
         }
+        
+        public enum Overrides
+        {
+            None = 0,
+            Group = 1,
+            Team = 2
+        }
     }
 }

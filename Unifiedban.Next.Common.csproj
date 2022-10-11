@@ -11,6 +11,7 @@
         <Version>4.0.0$(VersionSuffix)</Version>
         <AssemblyVersion>4.0.0</AssemblyVersion>
         <Nullable>enable</Nullable>
+        <LangVersion>10</LangVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
